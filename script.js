@@ -15,11 +15,15 @@ const library = [
     readingStatus: false,
   },
 ];
-
+let readbook=0;
 const numberOfBooksRead = () => {
   // write your code here
+	 books.forEach(book => {
+    book.readingStatus && ++readBooks
+});
+console.log(readBooks);
 };
-
+numberOfBooksRead()
 // Do not change the code below
 
 alert(numberOfBooksRead());
